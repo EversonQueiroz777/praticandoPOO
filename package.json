@@ -1,0 +1,21 @@
+{
+  "name": "practice_poo",
+  "version": "1.0.0",
+  "description": "Um projeto desenvolvido para aprendizado com base nos cursos de Orientação a Objetos do site da Alura.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EversonQueiroz777/praticandoPOO.git"
+  },
+  "author": "Everson",
+  "license": "ISC",
+  
+  "bugs": {
+    "url": "https://github.com/EversonQueiroz777/praticandoPOO/issues"
+  },
+  "type": "module",
+  "homepage": "https://github.com/EversonQueiroz777/praticandoPOO#readme"
+}
