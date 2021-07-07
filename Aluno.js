@@ -1,13 +1,13 @@
-export class Aluno{
-    registroDoAluno = 0;
-    constructor(nome, curso, cpf){
-        this.nome = nome;
-        this._curso = curso;
-        this._cpf = cpf;
-        Aluno.registroDoAluno += 1;
-    }
+export class Aluno {
+  static alunosMatriculados = 0;
+  constructor(nome, cpf) {
+    this.nome = nome;
+    this._cpf = cpf;
+    Aluno.alunosMatriculados += 1;
+  }
 
-    get cpf(){
-        return this._cpf;
-    }
+  get cpf() {
+    return this._cpf;
+  }
+
 }
