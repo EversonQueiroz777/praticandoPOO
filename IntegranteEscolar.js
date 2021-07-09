@@ -1,3 +1,5 @@
+import {Curso} from "./Curso.js";
+
 export class IntegranteEscolar {
   constructor(nome, curso, cpf) {
     this.nome = nome;
@@ -9,6 +11,10 @@ export class IntegranteEscolar {
     return this._cpf;
   }
 
+  get curso() {
+    return this._curso;
+  }
+
   contratar(cargo) {
     this.cargo = cargo;
     console.log(
@@ -17,9 +23,25 @@ export class IntegranteEscolar {
   }
 
   demitir(nome, cargo) {
-    if(nome == this.nome && cargo == this.cargo){
-        console.log(`${this.nome} anteriormente com o cargo de ${this.cargo}, foi desligado da instituição`);
-        this.cargo = "";
+    if (nome == this.nome && cargo == this.cargo) {
+      console.log(
+        `${this.nome} anteriormente com o cargo de ${this.cargo}, foi desligado da instituição`
+      );
+
+      //Arrumar um jeito de simplifcar isso
+      delete this.nome;
+      delete this._cpf;
+      delete this._curso;
+      delete this.cargo;
+      delete this._salario;
     }
+  }
+
+  definirNotas(disciplina, notas){
+    
+  }
+
+  definirConceito(){
+
   }
 }

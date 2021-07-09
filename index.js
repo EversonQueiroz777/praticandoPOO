@@ -1,13 +1,11 @@
-import {Aluno} from "./Aluno.js";
-import {Professor} from "./Professor.js";
-import {IntegranteEscolar} from "./IntegranteEscolar.js";
+import { Aluno } from "./Aluno.js";
+import { Curso } from "./Curso.js";
+import { Professor } from "./Professor.js";
 
-let aluno = new Aluno("Everson", "ADS", "12345678910");
-let professor = new Professor("Jhonson", "ADS", "12345678920");
+const disciplinas = ["lógica", "fundamentos", "IOT"];
 
-professor.contratar("Professor");
-console.log(professor);
+let professor = new Professor("Jhonson", "ADS", "12345678920", "4000");
+let curso = new Curso("Analise e Desenvolvimento de Sistemas",professor, disciplinas)
+let aluno = new Aluno("Everson", curso, "12345678910");
 
-professor.demitir("Jhonson", "Professor");
 
-console.log(professor);
