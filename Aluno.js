@@ -1,13 +1,10 @@
-export class Aluno {
-  static alunosMatriculados = 0;
-  constructor(nome, cpf) {
-    this.nome = nome;
-    this._cpf = cpf;
-    Aluno.alunosMatriculados += 1;
-  }
+import { IntegranteEscolar } from "./IntegranteEscolar.js";
 
-  get cpf() {
-    return this._cpf;
+export class Aluno extends IntegranteEscolar {
+  static alunosMatriculados = 0;
+  constructor(nome, curso, cpf) {
+    super(nome, curso, cpf);
+    Aluno.alunosMatriculados += 1;
   }
 
 }
