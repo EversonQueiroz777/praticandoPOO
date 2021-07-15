@@ -1,5 +1,3 @@
-import {Curso} from "./Curso.js";
-
 export class IntegranteEscolar {
   constructor(nome, curso, cpf) {
     this.nome = nome;
@@ -37,11 +35,4 @@ export class IntegranteEscolar {
     }
   }
 
-  definirNotas(disciplina, notas){
-    
-  }
-
-  definirConceito(){
-
-  }
 }
